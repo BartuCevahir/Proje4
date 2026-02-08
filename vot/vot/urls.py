@@ -18,12 +18,14 @@ from django.contrib import admin
 from django.urls import path
 import anasayfa.views
 import kurulüyeleri.views
+import üyeler.views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('home/', anasayfa.views.anasayfa_f_en),  
     path('anasayfa/', anasayfa.views.anasayfa_tr), 
     path('', anasayfa.views.anasayfa_tr), 
-    path('kurulüyeleri/', kurulüyeleri.views.kurulüyeleri)
+    path('kurulüyeleri/', kurulüyeleri.views.kurulüyeleri),
+    path('üyeler/', üyeler.views.uyeler_tr)
 
 ]

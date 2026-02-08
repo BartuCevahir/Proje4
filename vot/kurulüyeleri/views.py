@@ -1,10 +1,10 @@
 from django.shortcuts import render
+from django.http import HttpResponse 
+from django.template import loader # yeni eklenen
 
 # Create your views here.
-from django.http import HttpResponse
 
 def kurulüyeleri(request):
-    return HttpResponse("Kurul üyeleri sitemize hoş geldiniz.")
 
-
-
+    gidecek = loader.get_template('kuruluyeleri.html') # yeni eklenen
+    return HttpResponse(gidecek.render()) # yeni eklenen
