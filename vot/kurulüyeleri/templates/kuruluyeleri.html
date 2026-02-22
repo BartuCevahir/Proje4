@@ -1,12 +1,43 @@
 {% extends 'iceren.html' %}
 {% block icerik %}
 
-    <Title> VOT | Kurul Üyeleri</Title>
-    <center>
-        <h1> KURUL ÜYELERİ SAYFASI</h1>
-        <p>Kurul İşlemleri</p>
-        
+<Title> VOT | Kurul Üyeleri</Title>
+<center>
+    <h1> KURUL ÜYELERİ SAYFASI</h1>
+    <p>Kurul İşlemleri</p>
+    
 
+    <table class="table table-striped-columns">
+    <thead>
+        <tr>
+        <th scope="col">#</th>
+        <th scope="col">Ad Soyad</th>
+        <th scope="col">Mevki</th>
+        <th scope="col">İşlemler</th>
+
+        </tr>
+    </thead>
+    <tbody>
+        {% for x in kurulüyeleriliste %}
+        <tr>
+            <th scope="row">{{ x.id }}</th>
+            <td>{{ x.AdiSoyadi}} </td>
+            <td>{{ x.Mevki}}</td>
+            
+            <td>
+                
+            <a class="btn btn-sm btn-outline-secondary" href="/kurulüyeleri/detay/{{ x.id }}"> detay </a> 
+            <a class="btn btn-sm btn-outline-primary" href="/kurulüyeleri/guncelle/{{ x.id }}"> düzenle </a> 
+            <a class="btn btn-sm btn-outline-danger" href="/kurulüyeleri/sil/{{ x.id }}"> sil </a> 
+
+
+        </td>
+        </tr>
+    {% endfor %}       
+    
+    
+
+    </table>
 
     </center>
 

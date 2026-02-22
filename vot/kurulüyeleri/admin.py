@@ -1,3 +1,10 @@
 from django.contrib import admin
 
-# Register your models here.
+from .models import Kurulüyeleri
+
+
+class KurulüyeleriAdmin(admin.ModelAdmin):
+  list_display = ("AdiSoyadi", "Mevki")
+ 
+admin.site.register(Kurulüyeleri, KurulüyeleriAdmin)
+

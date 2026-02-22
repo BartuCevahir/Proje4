@@ -20,12 +20,17 @@ import anasayfa.views
 import kurulüyeleri.views
 import üyeler.views
 
+
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('home/', anasayfa.views.anasayfa_f_en),  
     path('anasayfa/', anasayfa.views.anasayfa_tr), 
     path('', anasayfa.views.anasayfa_tr), 
-    path('kurulüyeleri/', kurulüyeleri.views.kurulüyeleri),
-    path('üyeler/', üyeler.views.uyeler_tr)
+    path('kurulüyeleri/', kurulüyeleri.views.kurulüyeleri, name='kurulüyeleri'),
+    path('üyeler/', üyeler.views.uyeler_tr),
+    path('kurulüyeleri/detay/<int:gelenid>', kurulüyeleri.views.detay, name='detay'),
+    path('kurulüyeleri/sil/<int:gelenid>', kurulüyeleri.views.sil, name='CRUD_sil'),
+    path('kurulüyeleri/ekle', kurulüyeleri.views.ekle),
+    path('kurulüyeleri/guncelle/<int:gelenid>', kurulüyeleri.views.guncelle, name='kurulüyeleriduzelt'),
 
 ]

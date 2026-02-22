@@ -1,3 +1,5 @@
+{% load static %}
+
 <!DOCTYPE html>
 <html lang="tr">
 <head>
@@ -7,7 +9,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
     <title>Document</title>
-    <link rel="icon" type="image/x-icon" href="https://png.pngtree.com/png-vector/20250731/ourmid/pngtree-blue-yellow-and-white-volleyball-ball-png-image_16798436.webp">
+    <link rel="icon" type="image/x-icon" href="{% static 'resimler/topluluklogo.png' %} ">
 
 </head>
 <body>
@@ -15,7 +17,10 @@
 
      <nav class="navbar navbar-expand-lg bg-body-tertiary">
     <div class="container-fluid">
-        <a class="navbar-brand" href="/">OTÜ VOLEYBOL</a>
+        
+        <a class="navbar-brand" href="/">
+            <img  height="50"  src="{% static 'resimler/topluluklogo.png' %} " alt="">
+            OTÜ VOLEYBOL</a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
         </button>
@@ -24,6 +29,21 @@
             <li class="nav-item">
             <a class="nav-link active" aria-current="page" href="/kurulüyeleri/">KURUL ÜYELERİ</a>
             </li>
+            <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="/kurulüyeleri/">ETKİNLİKLER</a>
+            </li>
+            <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="/kurulüyeleri/">TAKIMLARIMIZ</a>
+            </li>
+            <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="/kurulüyeleri/">KURUL ÜYELERİ</a>
+            </li>
+            <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="/kurulüyeleri/">KURUL ÜYELERİ</a>
+            </li>
+            
+            
+            
             <li class="nav-item">
             <a class="nav-link" href="#">Link</a>
             </li>
@@ -54,7 +74,7 @@
     ...
     {% endblock %}
     </center>
-    <h1>buraya footer gelecek</h1>
+    
 
 </body>
 </html>
