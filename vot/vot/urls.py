@@ -19,6 +19,8 @@ from django.urls import path
 import anasayfa.views
 import kurulüyeleri.views
 import üyeler.views
+import etkinlikler.views
+import takimlar.views
 
 
 urlpatterns = [
@@ -32,5 +34,7 @@ urlpatterns = [
     path('kurulüyeleri/sil/<int:gelenid>', kurulüyeleri.views.sil, name='CRUD_sil'),
     path('kurulüyeleri/ekle', kurulüyeleri.views.ekle),
     path('kurulüyeleri/guncelle/<int:gelenid>', kurulüyeleri.views.guncelle, name='kurulüyeleriduzelt'),
+    path('etkinlikler/', etkinlikler.views.etkinlikler, name = 'etkinlikler'),
+    path('takimlar/', takimlar.views.takimlar, name = 'takimlar'),
 
 ]

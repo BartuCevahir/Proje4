@@ -3,14 +3,14 @@
 
 <Title> VOT | Kurul Üyeleri</Title>
 <center>
-    <h1> KURUL ÜYELERİ SAYFASI</h1>
-    <p>Kurul İşlemleri</p>
+    <h1> KURUL ÜYELERİMİZ</h1>
+    
     
 
     <table class="table table-striped-columns">
     <thead>
         <tr>
-        <th scope="col">#</th>
+       
         <th scope="col">Ad Soyad</th>
         <th scope="col">Mevki</th>
         <th scope="col">İşlemler</th>
@@ -20,7 +20,6 @@
     <tbody>
         {% for x in kurulüyeleriliste %}
         <tr>
-            <th scope="row">{{ x.id }}</th>
             <td>{{ x.AdiSoyadi}} </td>
             <td>{{ x.Mevki}}</td>
             

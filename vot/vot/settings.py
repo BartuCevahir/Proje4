@@ -41,6 +41,8 @@ INSTALLED_APPS = [
     'kurulüyeleri',
     'üyeler',
     'uyeler',
+    'etkinlikler',
+    'takimlar',
 ]
 
 MIDDLEWARE = [
