@@ -1,0 +1,169 @@
+{% extends 'iceren.html' %}
+
+{% block icerik%}
+{% load static %}
+
+<Title> VOT | Takımlar</Title>
+<center1>
+    
+ 
+<title>Voleybol Takımı</title>
+
+<style>
+body{
+    font-family: Arial, sans-serif;
+    background:#f2f2f2;
+}
+
+.kartlar{
+    display:flex;
+    gap:20px;
+    flex-wrap:wrap;
+}
+
+.kart{
+    width:200px;
+    background:white;
+    border-radius:12px;
+    box-shadow:0 4px 10px rgba(0,0,0,0.2);
+    text-align:center;
+    padding:15px;
+}
+
+.kart img{
+    width:100%;
+    border-radius:10px;
+}
+
+.isim{
+    font-size:18px;
+    font-weight:bold;
+    margin-top:10px;
+}
+
+.pozisyon{
+    color:#555;
+}
+
+.numara{
+    margin-top:5px;
+    font-weight:bold;
+    color:#0a66c2;
+}
+</style>
+
+</head>
+
+<body>
+
+<a class="btn btn-primary" href="/takimlar"> Geri Dön </a> 
+<!-- <button type="button" class="btn btn-primary">Primary</button> -->
+<center>
+<h2>Erkek Takımı Kadrosu</h2>
+
+<div class="kartlar">
+
+<div class="kart">
+<img src="oyuncu1.jpg" alt="Oyuncu">
+<div class="isim">Bartu <br> CEVAHİR</div>
+<div class="pozisyon">Pasör(Kaptan)</div>
+<div class="numara">#10</div>
+</div>
+
+<div class="kart">
+<img src="oyuncu1.jpg" alt="Oyuncu">
+<div class="isim">Deniz <br> SIĞINDIM</div>
+<div class="pozisyon">Pasör Çaprazı</div>
+<div class="numara">#1</div>
+</div>
+
+<div class="kart">
+<img src="oyuncu1.jpg" alt="Oyuncu">
+<div class="isim">Efe <br> ÖZKARA</div>
+<div class="pozisyon">Smaçör</div>
+<div class="numara">#9</div>
+</div>
+
+<div class="kart">
+<img src="oyuncu1.jpg" alt="Oyuncu">
+<div class="isim">Akif Enes <br> TÜZÜNAK</div>
+<div class="pozisyon">Smaçör</div>
+<div class="numara">#7</div>
+</div>
+
+<div class="kart">
+<img src="oyuncu1.jpg" alt="Oyuncu">
+<div class="isim">Mustafa Çağlayan <br> KIZILIRMAK</div>
+<div class="pozisyon">Smaçör</div>
+<div class="numara">#4</div>
+</div>
+
+<div class="kart">
+<img src="oyuncu1.jpg" alt="Oyuncu">
+<div class="isim">Fuat Efe <br> GÜNEŞ</div>
+<div class="pozisyon">Smaçör</div>
+<div class="numara">#2</div>
+</div>
+
+
+<div class="kart">
+<img src="oyuncu1.jpg" alt="Oyuncu">
+<div class="isim">Müfit Efe <br> ER</div>
+<div class="pozisyon">Orta Oyuncu</div>
+<div class="numara">#10</div>
+</div>
+
+<div class="kart">
+<img src="oyuncu1.jpg" alt="Oyuncu">
+<div class="isim">Mustafa <br> Uslu</div>
+<div class="pozisyon">Orta Oyuncu</div>
+<div class="numara">#99</div>
+</div>
+
+<div class="kart">
+<img src="oyuncu2.jpg" alt="Oyuncu">
+<div class="isim">Yiğit <br> ÇELİK</div>
+<div class="pozisyon">Libero</div>
+<div class="numara">#18</div>
+</div>
+
+<div class="kart">
+<img src="oyuncu3.jpg" alt="Oyuncu">
+<div class="isim">Efe Batın <br> YILMAZ</div>
+<div class="pozisyon">Libero</div>
+<div class="numara">#67</div>
+</div>
+
+</div>
+
+
+
+<!-- .parent-container {
+  position: relative; /* Establishes the positioning context */
+  width: 300px;
+  height: 200px;
+  border: 2px solid black;
+}
+
+.child-element {
+  position: absolute; /* Positioned relative to .parent-container */
+  top: 10px;
+  right: 10px;
+  width: 50px;
+  height: 50px;
+  background-color: red;
+} -->
+
+
+
+</body>
+</html>
+
+
+{% endblock %}
+       
+    
+
+    
+
+    </center>

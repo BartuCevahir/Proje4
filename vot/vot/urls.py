@@ -36,5 +36,9 @@ urlpatterns = [
     path('kurulüyeleri/guncelle/<int:gelenid>', kurulüyeleri.views.guncelle, name='kurulüyeleriduzelt'),
     path('etkinlikler/', etkinlikler.views.etkinlikler, name = 'etkinlikler'),
     path('takimlar/', takimlar.views.takimlar, name = 'takimlar'),
+    # path('takimlar/erkektakimi/<int:gelenid>', takimlar.views.erkektakimi), 
+    path('takimlar/erkektakimi/', takimlar.views.erkektakimi), 
+    path('takimlar/kadintakimi/', takimlar.views.kadintakimi), 
+
 
 ]
